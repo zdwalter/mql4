@@ -58,10 +58,10 @@ int OpenLong(double volume=0.1)
             Ask+TakeProfit_L*Point,comment,magic,0,arrow_color);
 
     GlobalVariableSet("globalBalans",AccountBalance());                    
-    globPos();
+    //globPos();
     //  if (GlobalVariableGet("globalPosic")>25)
     //  {
-    GlobalVariableSet("globalPosic",0);
+    //GlobalVariableSet("globalPosic",0);
     if (AutoLot) LotSize();
     //  }
 
@@ -97,10 +97,10 @@ int OpenShort(double volume=0.1)
     ticket=OrderSend(Symbol(),OP_SELL,volume,Bid,slippage,Bid+StopLoss_S*Point,
             Bid-TakeProfit_S*Point,comment,magic,0,arrow_color);
     GlobalVariableSet("globalBalans",AccountBalance());
-    globPos();
+    //globPos();
     //  if (GlobalVariableGet("globalPosic")>25)
     //  {
-    GlobalVariableSet("globalPosic",0);
+    //GlobalVariableSet("globalPosic",0);
     if (AutoLot) LotSize();
     //  }
 
@@ -129,14 +129,15 @@ int init()
     if (AutoLot) LotSize();
     if(!GlobalVariableCheck("globalBalans"))
         GlobalVariableSet("globalBalans",AccountBalance());
-    if(!GlobalVariableCheck("globalPosic"))
-        GlobalVariableSet("globalPosic",0);
+    //if(!GlobalVariableCheck("globalPosic"))
+    //    GlobalVariableSet("globalPosic",0);
     return(0);
 }
 
 int deinit()
 {   
-    
+    SendNotification("Close");
+    Alert("Close");
     return(0);
 }
 
