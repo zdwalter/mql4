@@ -15,7 +15,7 @@ fs.readFile file, (err, data) ->
         r =
             #time: s[0]
             #open: s[1]
-            close: s[2]*100000
+            close: parseInt(s[2]*100000)
             #high: s[3]
             #low: s[4]
         
@@ -37,8 +37,13 @@ fs.readFile file, (err, data) ->
         delta = (data[pos+Right].close - mid)
         v = value(delta)
         left.push(v)
-        console.log left.join(',')
         pos++
+        flag = false
+        for i in [0..Left]
+            if left[i] > 50 or left[i] < -50
+                flag = true
+        continue if flag
+        console.log left.join(',')
 
     
 

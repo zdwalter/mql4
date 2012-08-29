@@ -1,0 +1,103 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H 8 -R
+Relation:     mql4
+Instances:    200000
+Attributes:   7
+              delta_1
+              delta_2
+              delta_3
+              delta_4
+              delta_5
+              order
+              class
+Test mode:user supplied test set: size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Linear Node 0
+    Inputs    Weights
+    Threshold    0.23639506168060795
+    Node 1    -2.1963449552343928
+    Node 2    -2.1963449552343364
+    Node 3    -1.6983582933485568
+    Node 4    -1.9425908418881845
+    Node 5    1.623053239662827
+    Node 6    -1.4992441114649555
+    Node 7    2.1400374449877964
+    Node 8    -0.8288289170627235
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -3.913976787546473
+    Attrib delta_1    -0.2313599551518332
+    Attrib delta_2    0.5236001432677418
+    Attrib delta_3    -0.4845809864446499
+    Attrib delta_4    -1.4083950307732795
+    Attrib delta_5    1.287376750722083
+    Attrib order    -0.5264231575656667
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -3.913976787546436
+    Attrib delta_1    -0.23135995515183705
+    Attrib delta_2    0.5236001432677462
+    Attrib delta_3    -0.48458098644462266
+    Attrib delta_4    -1.4083950307733186
+    Attrib delta_5    1.2873767507221023
+    Attrib order    -0.526423157565667
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -6.929065365165638
+    Attrib delta_1    12.09869113513589
+    Attrib delta_2    0.9821355966782208
+    Attrib delta_3    -7.123050813541049
+    Attrib delta_4    -8.730448090297797
+    Attrib delta_5    -1.5568348236624445
+    Attrib order    16.08873332916096
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -4.005582105006674
+    Attrib delta_1    -0.48268529458389026
+    Attrib delta_2    0.5626616568413977
+    Attrib delta_3    -1.3371850422812415
+    Attrib delta_4    -0.5757486224737444
+    Attrib delta_5    1.129704995293283
+    Attrib order    -0.6140386949937038
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -5.605588993709541
+    Attrib delta_1    -2.954917805544663
+    Attrib delta_2    -0.7712750903894914
+    Attrib delta_3    1.1371155281179022
+    Attrib delta_4    -5.883052583755473
+    Attrib delta_5    0.7370720278286179
+    Attrib order    8.745184054949203
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -6.426473639549075
+    Attrib delta_1    0.5333329712155874
+    Attrib delta_2    1.0485432353850368
+    Attrib delta_3    -0.13458646385645023
+    Attrib delta_4    -4.6493901907297435
+    Attrib delta_5    -2.717720834103987
+    Attrib order    4.411246020941945
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -2.364890943711836
+    Attrib delta_1    6.083368785427239
+    Attrib delta_2    0.8374520085244727
+    Attrib delta_3    -2.5463126598822807
+    Attrib delta_4    -3.532514512670216
+    Attrib delta_5    -1.127996080480351
+    Attrib order    9.828515657681725
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -5.934156796041374
+    Attrib delta_1    4.166297964135294
+    Attrib delta_2    -0.1983193188529508
+    Attrib delta_3    3.715392584800632
+    Attrib delta_4    0.6432877579595192
+    Attrib delta_5    0.5086345706395629
+    Attrib order    -5.715624111817505
+Class 
+    Input
+    Node 0
