@@ -218,7 +218,7 @@ int start()
                     Print("close:", Bid, "-", Ask, ":", closeprice);
                     if (OrderClose(OrderTicket(),OrderLots(),closeprice,10,Green))
                     {
-                        Print("Forced closing of the trade - ?",OrderTicket());
+                        Print("Forced closing of the trade - ",OrderTicket());
                         OrderPrint();
                     }
                     else {
