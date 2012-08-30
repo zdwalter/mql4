@@ -21,5 +21,13 @@ rl.on 'line', (line) ->
             min[i] = x if min[i] > x
         
 rl.on 'close', () ->
-    console.log 'int Maxs[] = {',max.join(',','}'
-    console.log 'int Mins[] = {',min.join(',','}'
+    range = []
+    base = []
+    for i in [0..AttrNum-1]
+        range[i] = (max[i]-min[i])/2
+        base[i] = (max[i]+min[i])/2
+    console.log 'int Maxs[] = {',max.join(','),'};'
+    console.log 'int Mins[] = {',min.join(','),'};'
+    console.log 'double Ranges[] = {',range.join(','),'};'
+    console.log 'double Bases[] = {',base.join(','),'};'
+
